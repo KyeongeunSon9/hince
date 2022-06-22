@@ -16,15 +16,13 @@
 
     <header>
         <div class="header-container">
-            <h1 class="logo">
-                <a href="https://hince.co.kr/">
-                    <figure class="header-logo-img"></figure>
-                    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~ 여기 왜 에러인지 모르겠어요~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <a href="https://hince.co.kr/">
+                <h1 class="logo header-logo-img">
                     <span class="hidden">hince</span>
-                </a>
-            </h1>
+                </h1>
+            </a>
             <nav class="header-right-wrapper">
-                <ul>
+                <ul class="header-nav-icons">
                     <li>
                         <div class="badge"></div>
                         <a href="https://hince.co.kr/member/login.html">
@@ -47,11 +45,13 @@
                 </ul>
             </nav>
         </div>
-        <div class="shop-container">
-            <a href="https://hince.co.kr/product/shop/look">SHOP</a>
-            <figure class="shop-arrow-img"></figure>
+        <div class="header-shop-container">
+            <div class="shop-wrapper">
+                <a class="shop" href="https://hince.co.kr/product/shop/look">SHOP</a>
+                <figure class="shop-arrow-img"></figure>
+            </div>
+            <div class="hamberger-menu"></div>
         </div>
-        <div class="hamberger-menu"></div>
     </header>
 
 
@@ -81,9 +81,17 @@
                         <strong class="price">₩12,000</strong>
                     </div>
                     <ul class="color-group">
-                        <li><a class="color-chip-right-here" href="https://hince.co.kr/product/%EA%B8%80%EB%A1%9C%EC%9A%B0-%EC%97%85-%EB%84%A4%EC%9D%BC-%EC%BB%AC%EB%9F%AC-ss-%EB%9D%BC%EC%9D%B4%ED%8A%B8-%ED%9E%88%EC%96%B4/746/"></a></li>
-                        <li><a class="color-chip-siesta" href="https://hince.co.kr/product/%EA%B8%80%EB%A1%9C%EC%9A%B0-%EC%97%85-%EB%84%A4%EC%9D%BC-%EC%BB%AC%EB%9F%AC-ss-%EC%8B%9C%EC%97%90%EC%8A%A4%ED%83%80/747/"></a></li>
-                        <li><a class="color-chip-dayout" href="https://hince.co.kr/product/%EA%B8%80%EB%A1%9C%EC%9A%B0-%EC%97%85-%EB%84%A4%EC%9D%BC-%EC%BB%AC%EB%9F%AC-ss-%EB%8D%B0%EC%9D%B4-%EC%95%84%EC%9B%83/748/"></a></li>
+                        <li>
+                            <a class="color-chip color-right-here" href="https://hince.co.kr/product/%EA%B8%80%EB%A1%9C%EC%9A%B0-%EC%97%85-%EB%84%A4%EC%9D%BC-%EC%BB%AC%EB%9F%AC-ss-%EB%9D%BC%EC%9D%B4%ED%8A%B8-%ED%9E%88%EC%96%B4/746/"></a>
+                        </li>
+                        <li>
+                            <a class="color-chip color-siesta" href="https://hince.co.kr/product/%EA%B8%80%EB%A1%9C%EC%9A%B0-%EC%97%85-%EB%84%A4%EC%9D%BC-%EC%BB%AC%EB%9F%AC-ss-%EC%8B%9C%EC%97%90%EC%8A%A4%ED%83%80/747/">
+                                <figure class="color-selected-icon-img"></figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="color-chip color-dayout" href="https://hince.co.kr/product/%EA%B8%80%EB%A1%9C%EC%9A%B0-%EC%97%85-%EB%84%A4%EC%9D%BC-%EC%BB%AC%EB%9F%AC-ss-%EB%8D%B0%EC%9D%B4-%EC%95%84%EC%9B%83/748/"></a>
+                        </li>
                     </ul>
                     <div class="quantity-box">
                         <a href="#">
@@ -115,10 +123,10 @@
                     <div id="naver-pay-container">
                         <div class="npay-button-wrapper">
                             <figure class="npay-text-img"></figure>
-                            <a href="https://order.pay.naver.com/orderSheet/26549c32-0407-4d4b-89a9-7b27989ebde2/checkout">
+                            <a class="npay-buy-button" href="https://order.pay.naver.com/orderSheet/26549c32-0407-4d4b-89a9-7b27989ebde2/checkout">
                                 <figure class="npay-buy-button-img"></figure>
                             </a>
-                            <a href="#">
+                            <a class="npay-wish-button" href="#">
                                 <figure class="npay-wish-button-img"></figure>
                             </a>
                         </div>
@@ -461,10 +469,7 @@
     </main>
 
     <div id="cart-out">
-        <button class="cart-out-button">
-            <figure class="cart-out-img"></figure>
-        </button>
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~ 버튼 태그 안에 figure가 들어가면 안되나요? ~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <button class="cart-out-button cart-out-img"></button>
     </div>
     <div id="channel-talk">
         <a href="#">

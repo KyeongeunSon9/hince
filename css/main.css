@@ -1,0 +1,420 @@
+:root {
+    --main-burgundy-color: #a36d6a;
+    --main-section-background-color: #faf9f7;
+    --title-font-color: #4e3836;
+    --right-here-color: #E0E0E0;
+    --siesta-color: #f2dea4;
+    --day-out-color: #5861b5;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--main-burgundy-color);
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.header-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-logo-img {
+    background-image: url(../img/logotype.svg);
+    width: 115px;
+    height: 35px;
+}
+
+.header-nav-icons {
+    display: flex;
+    position: relative;
+}
+
+.badge {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--main-burgundy-color);
+    position: absolute;
+}
+
+.login-icon-img {
+    background-image: url(../img/account_out_d.svg);
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.search-icon-img {
+    background-image: url(../img/search_out_d.svg);
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.cart-icon-img {
+    background-image: url(../img/cart_out_d.svg);
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.header-shop-container {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.shop-wrapper {
+    width: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop {
+    font-family: 'Constantia', 'Times New Roman', 'Times', 'Georgia', serif;
+    font-size: 16px;
+    color: var(--title-font-color);
+}
+
+.shop-arrow-img {
+    background-image: url(../img/arrow_right_out_d.svg);
+    background-size: 100%;
+    width: 18px;
+    height: 18px;
+}
+
+.hamberger-menu {
+    width: 30px;
+    height: 16px;
+    border-top: 1px solid var(--main-burgundy-color);
+    border-bottom: 1px solid var(--main-burgundy-color);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.hamberger-menu::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 8px;
+    border-bottom: 1px solid var(--main-burgundy-color);
+}
+
+#main-section {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-section-background-color);
+    display: flex;
+}
+
+.image-area {
+    height: 100%;
+    position: relative;
+    flex-basis: 50%;
+}
+
+.main-cut-img {
+    background-image: url(../img/6f5353e0eba4b3260f77251095498eb4.jpg);
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-img-group {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+}
+
+.first-img {
+    background-image: url(../img/6f5353e0eba4b3260f77251095498eb4.jpg);
+    background-size: 100%;
+    width: 75px;
+    height: 100px;
+}
+
+.second-img {
+    background-image: url(../img/3a45ba9a14a227fe4777329694423d9f.jpg);
+    background-size: 100%;
+    width: 75px;
+    height: 100px;
+}
+
+.third-img {
+    background-image: url(../img/a670a9038969789b276cae841e09149b.jpg);
+    background-size: 100%;
+    width: 75px;
+    height: 100px;
+}
+
+.product-info-area {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container {
+    width: 400px;
+}
+
+.pop-icons {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.new-pop-icon-img {
+    background-image: url(../img/custom_3616420623688303.png);
+    background-size: 100%;
+    width: 45px;
+    height: 20px;
+}
+
+.limited-pop-icon-img {
+    background-image: url(../img/custom_4716554561006260.png);
+    background-size: 100%;
+    width: 70px;
+    height: 20px;
+}
+
+.coupon-pop-icon-img {
+    background-image: url(../img/custom_4516535582701831.png);
+    background-size: 100%;
+    width: 70px;
+    height: 20px;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--title-font-color);
+    margin-bottom: 10px;
+}
+
+.product-color {
+    font-size: 24px;
+    color: var(--title-font-color);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Constantia', 'Times New Roman', 'Times', 'Georgia', serif;
+    color: var(--title-font-color);
+}
+
+.price::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-top: 1px solid rgba(77,55,53,0.3);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.color-group {
+    width: 95px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.color-chip {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.color-chip:hover {
+    border: 3px solid rgba(255,255,255,0.25);
+}
+
+.color-right-here {
+    background-color: var(--right-here-color);
+}
+
+.color-siesta {
+    background-color: var(--siesta-color);
+}
+
+.color-selected-icon-img {
+    background-image: url(../img/hince-option-checker.png);
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+    background-position: center center;
+}
+
+.color-dayout {
+    background-color: var(--day-out-color);
+}
+
+.glow-up-sale {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coupon-left {
+    width: 65%;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid var(--main-burgundy-color);
+    border-right: 1px dashed;
+    line-height: 50px;
+    color: var(--main-burgundy-color);
+    font-size: 14px;
+}
+
+.sale-text {
+    margin-left: 10px;
+}
+
+.coupon-right {
+    width: 35%;
+    height: 50px;
+    background-color: var(--main-burgundy-color);
+    border: 1px solid var(--main-burgundy-color);
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.coupon-icon-img {
+    background-image: url(../img/cpndwn.svg);
+    background-size: 100%;
+    width: 24px;
+    height: 19px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.label, .total {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--main-burgundy-color);
+}
+
+.total strong {
+    margin-right: 5px;
+}
+
+.bag-button {
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-burgundy-color);
+    font-size: 15px;
+    font-family: 'Constantia', 'Times New Roman', 'Times', 'Georgia', serif;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#naver-pay-container {
+    width: 290px;
+    height: 85px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-top: 2px solid black;
+    align-items: center;
+}
+
+.npay-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.npay-text-img {
+    background-image: url(../img/npay_sp_text.png);
+    width: 79px;
+    height: 36px;
+    margin-right: 7px;
+}
+
+.npay-buy-button {
+    width: 140px;
+    height: 35px;
+    border: 1px solid #bfc4c7;
+    display: flex;
+    justify-content: center;
+    margin-right: 3px;
+}
+
+.npay-wish-button {
+    width: 40px;
+    height: 35px;
+    border: 1px solid #bfc4c7;
+    display: flex;
+    justify-content: center;
+}
+
+.npay-buy-button-img {
+    background-image: url(../img/npay_sp_payment.png);
+    width: 63px;
+    height: 35px;
+}
+
+.npay-wish-button-img {
+    background-image: url(../img/npay_sp_zzim.png);
+    width: 35px;
+    height: 35px;
+}
+
+.npay-event {
+    width: 275px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(204, 204, 204);
+    padding-top: 5px;
+    margin: 0 auto;
+}
+
+.npay-event-title {
+    font-size: 12px;
+    color: #00bd39;
+    margin-right: 10px;
+}
+
+.npay-event-text {
+    font-size: 12px;
+    color: #727272;
+}
+
+.npay-more-button-img {
+    background-image: url(../img/npay_sp_more.png);
+    width: 31px;
+    height: 20px;
+    margin-left: 40px;
+}
