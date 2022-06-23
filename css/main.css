@@ -117,6 +117,7 @@ header {
 
 main {
     position: relative;
+    background-color: #fff;
 }
 
 #main-section {
@@ -353,11 +354,11 @@ main {
     border-right: 1px dashed;
     line-height: 50px;
     color: var(--main-burgundy-color);
-    font-size: 14px;
     position: relative;
 }
 
 .sale-text {
+    font-size: 14px;
     margin-left: 10px;
 }
 
@@ -413,8 +414,8 @@ main {
 .total-price {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .label, .total {
@@ -543,12 +544,9 @@ main {
     margin: 0 auto;
 }
 
-
-
 #section-intro {
     width: 100%;
     height: 100vh;
-    background-color: var(--main-section-background-color);
     display: flex;
 }
 
@@ -560,11 +558,551 @@ main {
     height: 100%;
 }
 
-#contents-area {
+.contents-area {
+    flex-basis: 50%;
     background-image: url(../img/bg.jpg);
-    background-size: 1500px 2000px;
+    background-size: 1500px 2000px contain;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serif {
+    color: var(--title-font-color);
+    font-size: 14px;
+    font-family: 'Constantia', 'Times New Roman', 'Times', 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 30px;
+    font-family: 'Constantia', 'Times New Roman', 'Times', 'Georgia', serif;
+    color: var(--title-font-color);
+    line-height: 38px;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-size: 20px;
+    color: var(--title-font-color);
+    margin-bottom: 25px;
+}
+
+.description {
+    font-size: 16px;
+    color: var(--title-font-color);
+    line-height: 25px;
+}
+
+#section-product {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#section-product .contents-area {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 244, 248);
+    background-image: none;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.siesta-model-img {
+    background-image: url(../img/01_pdt_cat_intro3_banner_pc_bg.jpg);
+    background-size: 100%;
     background-position: center;
     width: 100%;
     height: 100%;
+}
+
+.detail-img-container {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.color-left-img {
+    background-image: url(../img/01_pdt_color_intro3_1_pc_mo_tag.jpg);
+    background-size: 100%;
+    width: 300px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.nail-right-gif-img {
+    background-image: url(../img/2.gif);
+    background-size: 100%;
+    width: 300px;
+    height: 400px;
+}
+
+.limited {
+    background-color: #ccdee9;
+    display: inline;
+    font-size: 13px;
+}
+
+.number {
+    font-family: 'Constantia', 'Times New Roman', 'Times', 'Georgia', serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#section-photo, #section-photo-2, #section-photo-3 {
+    margin-top: 200px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.product-photo-area {
     flex-basis: 50%;
+    background-color: rgb(237, 244, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-product-photo-img {
+    background-image: url(../img/02_pdt_half_small1_pc_mo_tag.jpg);
+    background-size: 100%;
+    width: 450px;
+    height: 680px;
+}
+
+.model-img-1 {
+    background-image: url(../img/02_pdt_half_full1_pc_bg.jpg);
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.model-img-2 {
+    background-image: url(../img/02_pdt_half_full2_pc_bg.jpg);
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+#section-photo-2 .product-photo-area {
+    flex-basis: 50%;
+    background-color: rgb(0, 90, 152);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-texture-photo-img {
+    background-image: url(../img/02_pdt_half_small2_pc_mo_tag.jpg);
+    background-size: 100%;
+    width: 450px;
+    height: 680px;
+}
+
+.right-nail-img {
+    background-image: url(../img/02_pdt_half_full3_pc_bg.jpg);
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.section-photo-3-video {
+    width: 450px;
+    height: 680px;
+}
+
+#section-colors {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.title-serif {
+    font-size: 30px;
+    color: var(--title-font-color);
+    font-family: 'Constantia', 'Times New Roman', 'Times', 'Georgia', serif;
+}
+
+.colors-container {
+    max-width: 1200px;
+    display: flex;
+    margin-top: 30px;
+}
+
+.colors {
+    width: 33.3333333%;
+}
+
+.colors-img {
+    background-size: 100% contain;
+    width: 350px;
+    height: 200px;
+}
+
+.right-here {
+    margin-right: 10px;
+}
+
+.siesta {
+    margin-right: 10px;
+}
+
+.right-here-on-hand-img {
+    background-image: url(../img/03_pdt_color1_pc_mo_tag.jpg);
+}
+
+.right-here-texture-img {
+    background-image: url(../img/03_pdt_color1-1_pc_mo_tag.jpg);
+}
+
+.sista-on-hand-img {
+    background-image: url(../img/03_pdt_color2_pc_mo_tag.jpg);
+}
+
+.siesta-texture-img {
+    background-image: url(../img/03_pdt_color2-1_pc_mo_tag.jpg);
+}
+
+.dayout-on-hand-img {
+    background-image: url(../img/03_pdt_color3_pc_mo_tag.jpg);
+}
+
+.dayout-texture-img {
+    background-image: url(../img/03_pdt_color3-1_pc_mo_tag.jpg);
+}
+
+.color-name-en {
+    font-size: 17px;
+    color: var(--title-font-color);
+    font-family: 'Constantia', 'Times New Roman', 'Times', 'Georgia', serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.color-name-ko {
+    font-size: 15px;
+    color: var(--title-font-color);
+    text-align: center;
+    margin-top: 10px;
+}
+
+#section-textures {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(237, 244, 248);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textures-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+.werable-glitter-gif-img {
+    background-image: url(../img/1-1.gif);
+    background-size: 100%;
+    width: 335px;
+    height: 445px;
+    margin-right: 25px;
+}
+
+.intense-clear-gif-img {
+    background-image: url(../img/1-2.gif);
+    background-size: 100%;
+    width: 335px;
+    height: 445px;
+    margin-right: 25px;
+}
+
+.mild-paint-gif-img {
+    background-image: url(../img/1-3.gif);
+    background-size: 100%;
+    width: 335px;
+    height: 445px;
+}
+
+.sub-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--title-font-color);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.caption {
+    font-size: 13px;
+    color: var(--title-font-color);
+    text-align: center;
+}
+
+#section-layerless {
+    width: 100%;
+    height: 100vh;
+    background-color: #e9e8e6;
+    display: flex;
+    margin-top: 200px;
+}
+
+#section-layerless .contents-area {
+    background-image: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 130px;
+    box-sizing: border-box;
+}
+
+.layerless-img {
+    background-image: url(../img/01_pdt_cat_intro7_banner_pc_bg.jpg);
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+#section-layerless .title {
+    font-size: 27px;
+}
+
+#section-layerless .description {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#section-step {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(237, 244, 248);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.step-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.wearable-glitter-texture-wrapper {
+    margin-right: 30px;
+}
+
+.step-wearable-glitter-texture-img {
+    background-image: url(../img/01_pdt_color_intro5_1_pc_mo_tag.jpg);
+    background-size: 100%;
+    background-position: center;
+    width: 520px;
+    height: 680px;
+}
+
+.step-simply-another-mood-img {
+    background-image: url(../img/01_pdt_color_intro5_2_pc_mo_tag.jpg);
+    background-size: 100%;
+    background-position: center;
+    width: 520px;
+    height: 680px;
+}
+
+#section-step .sub-title {
+    font-size: 14px;
+}
+
+#section-step .description {
+    font-size: 12px;
+    text-align: center;
+    line-height: 17px;
+    margin-top: 15px;
+}
+
+#section-feature {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: 200px
+}
+
+#section-feature .contents-area {
+    background-color: rgb(237, 244, 248);
+    background-image: none;
+}
+
+.feature-img {
+    background-image: url(../img/01_pdt_cat_intro5_banner_pc_bg.jpg);
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 60px
+}
+
+.feature-wrapper {
+    position: relative;
+}
+
+.seasonalble-color-img {
+    background-image: url(../img/04_usp1_pc_mo_tag.jpg);
+    background-size: 100%;
+    width: 300px;
+    height: 300px;
+}
+
+.wearable-color-chart-img {
+    background-image: url(../img/04_usp2_pc_mo_tag.jpg);
+    background-size: 100%;
+    width: 300px;
+    height: 300px;
+}
+
+.layerless-texture-img {
+    background-image: url(../img/04_usp3_pc_mo_tag.jpg);
+    background-size: 100%;
+    width: 300px;
+    height: 300px;
+}
+
+.high-shine-finish-img {
+    background-image: url(../img/04_usp4_pc_mo_tag.jpg);
+    background-size: 100%;
+    width: 300px;
+    height: 300px;
+}
+
+.feature-typography {
+    font-size: 35px;
+    font-family: 'Constantia', 'Times New Roman', 'Times', 'Georgia', serif;
+    color: #fff;
+    line-height: 35px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.feature-text {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 10px;
+    letter-spacing: -1px;
+}
+
+#section-light-up-collection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: 200px;
+}
+
+#section-light-up-collection .contents-area {
+    background-image: url(../img/bg2.jpg);
+    background-size: 1500px 2000px contain;
+    width: auto;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 90px;
+    box-sizing: border-box;
+}
+
+.light-up-collection-img {
+    background-image: url(../img/04_pdt_collection_banner_pc_bg.jpg);
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+#section-light-up-collection .serif {
+    opacity: 0.65;
+    margin-bottom: 20px;
+}
+
+#section-light-up-collection .title {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#section-light-up-collection .product-name {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#section-light-up-collection .description {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.more-button {
+    width: 260px;
+    height: 50px;
+    border: 1px solid var(--main-burgundy-color);
+    color: var(--main-burgundy-color);
+    font-size: 14px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.arrow-icon {
+    background-image: url(../img/arrow_right_out.svg);
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.light-up-collection-product-continer {
+    display: flex;
+    padding-top: 50px;
+}
+
+.toneup-base-img {
+    background-image: url(../img/04_pdt_collection_thumb1_mo_pc_tag.png);
+    background-size: 100%;
+    width: 220px;
+    height: 220px;
+}
+
+.glow-up-nail-img {
+    background-image: url(../img/04_pdt_collection_thumb2_mo_pc_tag.png);
+    background-size: 100%;
+    width: 220px;
+    height: 220px;
+}
+
+.mew-depth-eyeshadow-img {
+    background-image: url(../img/04_pdt_collection_thumb3_mo_pc_tag.png);
+    background-size: 100%;
+    width: 220px;
+    height: 220px;
+}
+
+.light-up-collection-product-name {
+    font-size: 14px;
+    color: var(--title-font-color);
+    font-weight: 900;
+    text-align: center;
 }
