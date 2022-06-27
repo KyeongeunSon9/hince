@@ -1406,3 +1406,43 @@ footer {
     right: 15px;
     bottom: 0;
 }
+
+@media screen and (max-width:900px) {
+    .mobile-hidden {
+        display: none;
+    }
+
+    #main-section {
+        flex-direction: column-reverse;
+    }
+
+    .image-area {
+        flex-basis: 100%;
+    }
+    
+    .product-info-area {
+        justify-content: end;
+        align-items: flex-end;
+        flex-basis: 100%;
+        margin-top: 0;
+        padding-top: 0;
+        margin-right: 20px;
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .product-color, .price {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .price::after {
+        display: none;
+    }
+
+}
