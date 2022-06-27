@@ -287,10 +287,17 @@ main {
     height: 25px;
     border-radius: 50%;
     box-sizing: border-box;
+    position: relative;
 }
 
 .color-chip:hover {
     border: 3px solid rgba(255,255,255,0.25);
+}
+
+.color-chip:hover .color-selected-icon-img {
+    position: absolute;
+    left: -3px;
+    top: -3px;
 }
 
 .color-right-here {
@@ -1166,12 +1173,12 @@ main {
 
 #section-info {
     width: 100%;
-    height: 450px;
     background-color: #fff;
     border-bottom-right-radius: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 100px 0;
 }
 
 .info-title {
