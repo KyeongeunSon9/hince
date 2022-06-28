@@ -585,8 +585,10 @@ main {
 
 #section-summer-collection {
     width: 100%;
-    height: 450px;
     background-color: rgb(238, 244, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .summer-collection-banner-img {
@@ -594,7 +596,6 @@ main {
     background-size: contain;
     width: 850px;
     height: 450px;
-    margin: 0 auto;
 }
 
 #section-intro {
@@ -1421,18 +1422,20 @@ footer {
 
     #main-section {
         flex-direction: column-reverse;
+        position: relative;
+        height: auto;
     }
 
     .image-area {
         flex-basis: 100%;
+        margin-bottom: 50px;
     }
     
     .product-info-area {
+        min-height: 90px;
         justify-content: end;
         align-items: flex-end;
         flex-basis: 100%;
-        margin-top: 0;
-        padding-top: 0;
         margin-right: 20px;
     }
 
@@ -1440,6 +1443,8 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        padding-top: 130px;
+        padding-bottom: 15px;
     }
 
     .product-color, .price {
@@ -1450,6 +1455,71 @@ footer {
 
     .price::after {
         display: none;
+    }
+
+    .color-group {
+        position: absolute;
+        bottom: -30px;
+    }
+
+    .summer-collection-banner-img {
+        width: 650px;
+    }
+
+    #section-intro {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #section-intro .image-area {
+        margin-bottom: 0;
+    }
+
+    #section-intro .contents-area {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #section-product {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #section-product .image-area {
+        margin-bottom: 0;
+    }
+
+    #section-product .contents-area {
+        min-height: auto;
+        height: auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    #section-product .contents-container {
+        margin-left: 20px;
+    }
+
+    .full {
+        width: 100vw;
+        height: 100vw;
+        min-height: auto;
+    }
+
+    #section-photo {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .product-photo-area {
+        padding: 60px 0px;
+    }
+
+    #section-photo-2 {
+        flex-direction: column;
     }
 
 }
