@@ -663,7 +663,6 @@ main {
     background-image: none;
     padding: 0 25px;
     box-sizing: border-box;
-    align-items: flex-start;
 }
 
 .siesta-model-img {
@@ -676,8 +675,10 @@ main {
 
 .detail-img-container {
     display: flex;
+    justify-content: space-between;
     padding-bottom: 35px;
     margin: 0 auto;
+    width: 620px;
 }
 
 .color-left-img {
@@ -685,7 +686,6 @@ main {
     background-size: 100%;
     width: 300px;
     height: 400px;
-    margin-right: 20px;
 }
 
 .nail-right-gif-img {
@@ -696,7 +696,8 @@ main {
 }
 
 #section-product .contents-container {
-    margin-left: 100px;
+    width: 620px;
+    margin: 0 auto;
 }
 
 .limited {
@@ -1464,6 +1465,7 @@ footer {
 
     .summer-collection-banner-img {
         width: 650px;
+        height: 380px;
     }
 
     #section-intro {
@@ -1511,6 +1513,8 @@ footer {
 
     #section-photo {
         flex-direction: column;
+        height: auto;
+        margin: 10px;
         margin-top: 40px;
     }
 
@@ -1518,8 +1522,37 @@ footer {
         padding: 60px 0px;
     }
 
-    #section-photo-2 {
-        flex-direction: column;
+    #section-photo .image-area {
+        margin-bottom: 0;
     }
 
+    #section-photo-2 {
+        flex-direction: column;
+        margin: 10px;
+        margin-top: 40px;
+        height: auto;
+    }
+
+    #section-photo-2 .image-area {
+        margin-bottom: 0;
+    }
+
+    #section-photo-3 {
+        flex-direction: column;
+        height: auto;
+        margin: 10px;
+        margin-top: 40px;
+    }
+
+    #section-photo-3 .image-area {
+        margin-bottom: 0;
+    }
+
+    #section-colors {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: auto;
+    }
+
+   
 }
