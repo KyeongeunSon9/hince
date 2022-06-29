@@ -1617,16 +1617,24 @@ footer {
     }
 
     #section-layerless {
-        margin-top: 20px;
+        margin-top: 50px;
         flex-direction: column;
+        height: auto;
     }
 
-    .image-area {
+    #section-layerless .image-area {
         max-width: 600px;
+        margin-bottom: 0;
+    }
+
+    #section-layerless .contents-area {
+        padding-left: 40px;
+        margin-bottom: 50px;
     }
 
     #section-step {
         height: auto;
+        margin-top: 50px;
     }
 
     .step-container {
@@ -1649,6 +1657,7 @@ footer {
     #section-feature {
         height: auto;
         flex-direction: column;
+        margin-top: 50px;
     }
 
     #section-light-up-collection {
@@ -1728,12 +1737,13 @@ footer {
         bottom: -50%;
         right: 0;
     }
-
+    
     .footer-list-title::after {
         content: "+";
         display: inline-block;
         position: absolute;
         right: 0;
+        z-index: 3;
     }
 
     .mobile-fixed-container {
