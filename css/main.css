@@ -1255,6 +1255,7 @@ label {
 
 footer {
     width: 100%;
+    position: relative;
 }
 
 .footer-container {
@@ -1367,17 +1368,15 @@ footer {
     margin-top: 25px;
 }
 
-#arrow-up {
-    position: absolute;
-    bottom: -12%;
-    right: 15px;
-}
-
 .arrow-up-img {
     background-image: url(../img/circle_arrow_up_out_w.svg);
     background-size: cover;
     width: 30px;
     height: 30px;
+    position: absolute;
+    bottom: -20%;
+    right: 15px;
+    z-index: 3;
 }
 
 .sns-icon-group {
@@ -1414,6 +1413,10 @@ footer {
     position: fixed;
     right: 15px;
     bottom: 0;
+}
+
+.pc-hidden {
+    display: none;
 }
 
 @media screen and (max-width:900px) {
@@ -1552,7 +1555,224 @@ footer {
         margin-top: 0;
         margin-bottom: 0;
         height: auto;
+        margin-top: 90px;
+        margin-bottom: 90px;
     }
 
-   
+    .colors-container {
+        flex-direction: column;
+        min-width: 450px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .colors {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+        position: relative;
+        margin-bottom: 60px;
+    }
+
+    .colors-contents {
+        position: absolute;
+        right: -135%;
+        bottom: -17%;
+        margin: 0 auto;
+    }
+
+    .color-name-en {
+        font-size: 8px;
+    }
+
+    .color-name-ko {
+        font-size: 9px;
+        margin-top: 3px;
+    }
+
+    #section-textures {
+        height: auto;
+        padding: 0 10px
+    }
+    
+    .textures-container {
+        max-width: 650px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .textures-container figure {
+        width: 300px;
+        height: 400px;
+    }
+
+    .title-serif {
+        margin-top: 40px;
+    }
+
+    .caption {
+        margin-bottom: 10px;
+    }
+
+    #section-layerless {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .image-area {
+        max-width: 600px;
+    }
+
+    #section-step {
+        height: auto;
+    }
+
+    .step-container {
+        max-width: 600px;
+    }
+
+    .step-container figure {
+        width: 300px;
+        height: 400px;
+    }
+
+    .wearable-glitter-texture-wrapper {
+        width: 50%;
+    }
+
+    .simply-another-mood-wrapper {
+        width: 50%;
+    }
+
+    #section-feature {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #section-light-up-collection {
+        height: auto;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    #section-light-up-collection .image-area {
+        margin: 0;
+    }
+
+    #section-light-up-collection .contents-area {
+        padding: 20px;
+    }
+
+    #section-info {
+        height: auto;
+    }
+
+    .info {
+        max-width: 550px;
+    }
+
+    .pc-hidden {
+        display: block;
+    }
+
+    .links-wrapper > input {
+        display: none;
+    }
+
+    .links-wrapper label {
+        background-color: transparent;
+    }
+
+    .menu {
+        transform: translateY(-100px);
+        position: absolute;
+        z-index: -1;
+        visibility: hidden;
+        margin-bottom: 20px;
+    }
+
+    .links-wrapper > input:checked + .menu {
+        transform: none;
+        visibility: visible;
+        position: static;
+        transition: 0.3s;
+    }
+
+    .mobile-nav {
+        display: block;
+        height: auto;
+        position: relative;
+        padding: 0 15px;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footer-container {
+        margin-bottom: 20px;
+    }    
+
+    .mobile-nav .privacy-group {
+        margin-top: 35px;
+    }
+
+    .mobile-nav .copy-right {
+        margin-top: 3px;
+    }
+
+    .arrow-up-img {
+        position: absolute;
+        bottom: -50%;
+        right: 0;
+    }
+
+    .footer-list-title::after {
+        content: "+";
+        display: inline-block;
+        position: absolute;
+        right: 0;
+    }
+
+    .mobile-fixed-container {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px 20px;
+        width: 620px;
+    }
+
+    .mf-review {
+        width: 180px;
+        height: 50px;
+        background-color: var(--main-burgundy-color);
+        color: #fff;
+        line-height: 50px;
+        border-right: 1px solid #fff;
+        font-family: 'Constantia', 'Times New Roman', 'Times', 'Georgia', serif;
+        font-size: 13px;
+    }
+
+    .mf-cart {
+        width: 390px;
+        height: 50px;
+        background-color: var(--main-burgundy-color);
+        color: #fff;
+        line-height: 50px;
+        font-family: 'Constantia', 'Times New Roman', 'Times', 'Georgia', serif;
+        font-size: 13px;
+    }
+
+    .mf-naverpay {
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/npay-button-logo-symbol.png);
+        background-position: center;
+        background-size: 40px auto;
+        background-color: #00c63b;
+    }
 }

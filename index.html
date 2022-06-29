@@ -238,20 +238,26 @@
                 <div class="right-here colors">
                     <figure class="right-here-on-hand-img colors-img"></figure>
                     <figure class="right-here-texture-img colors-img"></figure>
-                    <p class="color-name-en">RIGHT HERE</p>
-                    <p class="color-name-ko">라이트 히어</p>
+                    <div class="colors-contents">
+                        <p class="color-name-en">RIGHT HERE</p>
+                        <p class="color-name-ko">라이트 히어</p>
+                    </div>
                 </div>
                 <div class="siesta colors">
                     <figure class="sista-on-hand-img colors-img"></figure>
                     <figure class="siesta-texture-img colors-img"></figure>
-                    <p class="color-name-en">SIESTA</p>
-                    <p class="color-name-ko">시에스타</p>
+                    <div class="colors-contents">
+                        <p class="color-name-en">SIESTA</p>
+                        <p class="color-name-ko">시에스타</p>
+                    </div>
                 </div>
                 <div class="dayout colors">
                     <figure class="dayout-on-hand-img colors-img"></figure>
                     <figure class="dayout-texture-img colors-img"></figure>
-                    <p class="color-name-en">DAY OUT</p>
-                    <p class="color-name-ko">데이아웃</p>
+                    <div class="colors-contents">
+                        <p class="color-name-en">DAY OUT</p>
+                        <p class="color-name-ko">데이아웃</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -472,7 +478,7 @@
                 <a href="https://hince.co.kr/">
                     <figure class="footer-logo-img"></figure>
                 </a>
-                <p class="footer-info">
+                <p class="footer-info mobile-hidden">
                 VIVAWAVE Co., Ltd.  |  CEO. Heo Jaeseok
                 <br>(Hapjeong-dong 364-29) B1F~4F, 18, Dongmak-ro, Mapo-gu, Seoul, Republic of Korea
                 <br>Business Registration No. <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=6328800936&amp;apv_perm_no=">6328800936</a>
@@ -481,13 +487,13 @@
                 <br>Email. <a href="mailto:cs@vivawave.co.kr">cs@vivawave.co.kr</a>  |  Personal Information Manager. <a href="mailto:cs@vivawave.co.kr">Saein Yoo</a>
                 <br>Hosting by Cafe24
                 </p>
-                <span class="privacy-group">
+                <span class="privacy-group mobile-hidden">
                     <a class="footer-agreement" href="https://hince.co.kr/member/agreement.html">이용약관</a> | <a class="footer-privacy" href="https://hince.co.kr/member/privacy.html">개인정보처리방침</a>
                 </span>
-                <p class="copy-right">© 2020 VIVAWAVE Co., Ltd. All rights reserved.</p>
+                <p class="copy-right mobile-hidden">© 2020 VIVAWAVE Co., Ltd. All rights reserved.</p>
             </div>
     
-            <div class="footer-right-container">
+            <div class="footer-right-container mobile-hidden">
                 <div class="links-wrapper">
                     <ul class="footer-customer-center">
                         <li class="footer-list-title">Customer Center</li>
@@ -537,12 +543,96 @@
                     </ul>
                 </div>
             </div>
+
+            <div id="arrow-up mobile-hidden">
+                <a href="#">
+                    <figure class="arrow-up-img mobile-hidden"></figure>
+                </a>
+            </div>
+        </div>
+
+        <div class="mobile-nav pc-hidden">
+            <div class="links-wrapper">
+                <label class="footer-list-title" for="customer">Customer Center</label>
+                <input type="checkbox" name="" id="customer">
+                <ul class="footer-customer-center menu">
+                    <li class="cs-center-number">1644-7161</li>
+                    <li class="info-text">10:30 - 17:30</li>
+                    <li class="info-text">토,일요일 휴무</li>
+                </ul>
+            </div>
+            <div class="links-wrapper">
+                <label class="footer-list-title" for="order">Order Tracking</label>
+                <input type="checkbox" name="" id="order">
+                <ul class="footer-order-tracking menu">
+                    <li>
+                        <a class="underline" href="/myshop/order/list.html">주문내역</a>
+                    </li>
+                    <li>
+                        <a class="underline" href="https://www.cjlogistics.com/ko/tool/parcel/tracking">배송조회</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links-wrapper">
+                <label class="footer-list-title" for="partnership">Partnership</label>
+                <input type="checkbox" name="" id="partnership">
+                <ul class="footer-partnership menu">
+                    <li>
+                        <a class="underline" href="mailto:sales@vivawave.co.kr">도매/제휴문의</a>
+                    </li>
+                    <li>
+                        <a class="underline" href="mailto:global@vivawave.co.kr">해외수출문의</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links-wrapper">
+                <label class="footer-list-title" for="sns">SNS</label>
+                <input type="checkbox" name="" id="sns">
+                <ul class="footer-sns menu">
+                    <li>
+                        <a class="underline" href="https://www.instagram.com/hince_official/">Instagram</a>
+                    </li>
+                    <li>
+                        <a class="underline" href="https://pf.kakao.com/_Xwxhvj">Kakaotalk</a>
+                    </li>
+                    <li>
+                        <a class="underline" href="https://twitter.com/hince_official/">Twitter</a>
+                    </li>
+                    <li>
+                        <a class="underline" href="https://weibo.com/hincechina">Weibo</a>
+                    </li>
+                    <li>
+                        <a class="underline" href="https://www.xiaohongshu.com/user/profile/5dbc033900000000010036fe?xhsshare=CopyLink&amp;appuid=561dec453f0f3c566e22d55c&amp;apptime=1645513521">Red</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links-wrapper">
+                <label class="footer-list-title" for="company">Company / Legal</label>
+                <input type="checkbox" name="" id="company">
+                <ul class="footer-compay menu">
+                    <li class="footer-info">
+                        VIVAWAVE Co., Ltd.  |  CEO. Heo Jaeseok
+                        <br>(Hapjeong-dong 364-29) B1F~4F, 18, Dongmak-ro, Mapo-gu, Seoul, Republic of Korea
+                        <br>Business Registration No. <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=6328800936&amp;apv_perm_no=">6328800936</a>
+                        <br>E-commerce Permit Registration No. <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=6328800936&amp;apv_perm_no=">2019-SeoulMapo-1141</a>
+                        <br>Contact. 1644-7161  |  Fax. 02-6008-2717
+                        <br>Email. <a href="mailto:cs@vivawave.co.kr">cs@vivawave.co.kr</a>  |  Personal Information Manager. <a href="mailto:cs@vivawave.co.kr">Saein Yoo</a>
+                        <br>Hosting by Cafe24
+                    </li>
+            </div>
+            
+            <span class="privacy-group">
+                <a class="footer-agreement" href="https://hince.co.kr/member/agreement.html">이용약관</a> | <a class="footer-privacy" href="https://hince.co.kr/member/privacy.html">개인정보처리방침</a>
+            </span>
+            <p class="copy-right">© 2020 VIVAWAVE Co., Ltd. All rights reserved.</p>
+
             <div id="arrow-up">
                 <a href="#">
                     <figure class="arrow-up-img"></figure>
                 </a>
             </div>
         </div>
+
         <div class="sns-icon-group">
             <a href="https://pf.kakao.com/_Xwxhvj">
                 <figure class="instagram-icon-img"></figure>
@@ -560,10 +650,16 @@
     <div id="cart-out">
         <button class="cart-out-button cart-out-img"></button>
     </div>
-    <div id="channel-talk">
+    <div id="channel-talk mobile-hidden">
         <a href="#">
-            <figure class="channel-talk-img"></figure>
+            <figure class="channel-talk-img mobile-hidden"></figure>
         </a>
+    </div>
+
+    <div class="mobile-fixed-container pc-hidden">
+        <a class="mf-review" href="#section-info">REVIEW</a>
+        <a class="mf-cart" href="#">CART</a>
+        <a class="mf-naverpay" href="#"></a>
     </div>
 
 </body>
