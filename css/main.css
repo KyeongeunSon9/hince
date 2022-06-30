@@ -19,6 +19,10 @@ body {
     background-color: var(--main-burgundy-color);
 }
 
+section {
+    overflow: hidden;
+}
+
 header {
     width: 100%;
     position: fixed;
@@ -1691,7 +1695,8 @@ footer {
     }
 
     .links-wrapper label {
-        background-color: transparent;
+        background-color: var(--main-burgundy-color);
+        overflow: hidden;
     }
 
     .menu {
@@ -1732,18 +1737,29 @@ footer {
         margin-top: 3px;
     }
 
+    .mobile-nav .links-wrapper {
+        position: relative;
+    }
+
     .arrow-up-img {
         position: absolute;
         bottom: -50%;
         right: 0;
     }
     
-    .footer-list-title::after {
+    .after::after {
         content: "+";
         display: inline-block;
         position: absolute;
         right: 0;
+        bottom: 0;
         z-index: 3;
+        color: #fff;
+        margin-right: 10px;
+    }
+
+    input:checked ~ .after::after {
+        content: "-";
     }
 
     .mobile-fixed-container {
